@@ -13,9 +13,14 @@ jobs:
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            This is a multi-line test comment
-            - With GitHub **Markdown** :sparkles:
-            - Created by [create-or-update-comment][1]
+            ## **Thank you for contributing to the Leapp project!**
 
-            [1]: https://github.com/peter-evans/create-or-update-comment
-          reactions: '+1'
+            Please note that every PR needs to comply with the 
+            [Leapp Guidelines](https://leapp.readthedocs.io/en/latest/contributing.html#) and must pass all tests in order to be mergable.
+
+            If you want to re-run tests or request review, you can use following commands as a comment:\
+
+            - **leapp-ci build** to run unit tests, copr build and e2e tests in **OAMG CI**
+            - **review please** to notify leapp developers of review request
+
+            **Note:** In case there are problems with tests not being triggered automatically on new PR/commit or pending for a long time, please consider rerunning the CI by commenting **leapp-ci build** (might require several comments). If the problem persists, contact leapp-infra.
