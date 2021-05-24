@@ -1,7 +1,7 @@
 name: PR comment
 
-on: 
-  pull_request:
+on:
+  pull_request_target:
     types: opened
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
           body: |
             ## **Thank you for contributing to the Leapp project!**
 
-            Please note that every PR needs to comply with the 
+            Please note that every PR needs to comply with the
             [Leapp Guidelines](https://leapp.readthedocs.io/en/latest/contributing.html#) and must pass all tests in order to be mergable.
 
             If you want to re-run tests or request review, you can use following commands as a comment:\
