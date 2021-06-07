@@ -1,5 +1,5 @@
 # IMPORTANT NOTE
-# In this workflow should not be checkout action, because of security reasons.
+# In this workflow should NOT be checkout action, because of security reasons.
 # More info:
 # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#pull_request_target
 # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
